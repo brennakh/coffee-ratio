@@ -1,0 +1,18 @@
+Feature request ideas: 
+- Option to convert ounces
+- Switch, water to coffee
+- Scale up or down with current ratio 
+- Options for different brew types
+    - instant coffee
+    - french press
+    - aeropress
+    - moka pot
+    - keurig 
+    - tea
+- Tea? 
+- Grind size 
+- Timer & alarm 
+- React?
+- Save your preferences 
+- Deploy this shiz
+- Make pretty with bootstrap

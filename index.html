@@ -7,20 +7,33 @@
         <title>Coffee Ratio App</title>
 
         <link rel="stylesheet" href="src/main.css">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+        </style> 
     </head>
 
     <body>
-        <main>
+        <div class="top-div">
             <div class="instructions">
                 <h1>Coffee : Water</h1>
-                <p>Do you know how much water you need to make your morning pourover? Enter the amount of coffee you have in grams below:</p>
+                <p>Do you know how much water you need to make your morning brew? Enter the amount of coffee you have in grams below:</p>
             </div>
             <div class="calculations">
                 <input type="text" id="coffeegrams" value="30">
                 <button onclick="coffeeToWaterRatio()">grams of coffee</button>
                 <p>You will need <span id="waterAmountResult">this many</span> grams of water</p>
             </div>
-        </main>
+        </div>
+        <div class="bottom-div">
+            <div class="bottom-div_div">
+                <div class="square grams">Grams</div>
+                <div class="square ounces">Ounces</div>
+                <div class="square ratio">1:17</div>
+                <div class="square timer">00:00</div>
+            </div>
+            
+        </div>
         
 
         <script src="src/app.js"></script>

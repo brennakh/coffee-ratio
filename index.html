@@ -16,21 +16,48 @@
     <body>
         <div class="top-div">
             <div class="instructions">
-                <h1>Coffee : Water</h1>
-                <p>Do you know how much water you need to make your morning brew? Enter the amount of coffee you have in grams below:</p>
+                <h1>coffee : water</h1>
+                <p>does your morning brain always forget how much water you need to make your regular cup of joe? just enter the amount of beans you have below:</p>
             </div>
             <div class="calculations">
-                <input type="text" id="coffeegrams" value="30">
-                <button onclick="coffeeToWaterRatio()">grams of coffee</button>
-                <p>You will need <span id="waterAmountResult">this many</span> grams of water</p>
+                <div>
+                    <span>grams of coffee</span>
+                    <input type="text" id="coffeegrams" value="30">
+                </div>
+                <div>
+                    <span>preferred ratio</span>
+                    <input type="text" id="coffeeratio" value="17">
+                </div>
+                
+                <button type="button" onclick="coffeeToWaterRatio()">calculate!</button>
             </div>
         </div>
         <div class="bottom-div">
             <div class="bottom-div_div">
-                <div class="square grams">Grams</div>
-                <div class="square ounces">Ounces</div>
-                <div class="square ratio">1:17</div>
-                <div class="square timer">00:00</div>
+                <div class="square grams">
+                    <p> grams of water:</p>
+                    <span id="waterAmountResult"></span>
+                    
+                </div>
+                <!-- <div class="square ounces">
+                    <p>ounces</p>
+                    <span id="waterAmountOunces"></span>
+                </div> -->
+                <!-- <div class="square ratio">
+                    <p>ratio</p>
+                    1:17
+                </div>
+                <div class="square timer">
+                    <p>timer</p>
+                    <input 
+                        type="number" 
+                        placeholder="minutes">
+                    <input 
+                        type="number" 
+                        placeholder="seconds">
+                    
+                    <p id="countdown"></p> -->
+                </div>
             </div>
             
         </div>

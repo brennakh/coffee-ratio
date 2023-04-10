@@ -16,11 +16,30 @@ let amount = 0
 
 function coffeeToWaterRatio(){
     let coffeeAmount = document.getElementById('coffeegrams').value
-    // console.log("hi")
-    //console.log(coffeeAmount)
     let coffeeAmountNumber = Number(coffeeAmount)
-    let result = coffeeAmountNumber * 16
-    //alert(result)
+
+    let coffeeRatio = document.getElementById('coffeeratio').value
+    let coffeeRatioNumber = Number(coffeeRatio)
+
+    let result = coffeeAmountNumber * coffeeRatioNumber
+    let ounces = Math.ceil(result * 0.035)
     document.getElementById('waterAmountResult').textContent = result
+    document.getElementById('waterAmountOunces').textContent = ounces
 }
 
+const startingMinutes = 10
+let time = startingMinutes * 60;
+
+const countdownElement = document.getElementById('countdown');
+
+setInterval(updateCountdown, 1000)
+
+function updateCountdown() {
+    const minutes = Math.floor(time / 60)
+    let seconds = time % 60
+
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    countdownElement.innerHTML = `${minutes}:${seconds}`
+    time--;
+}
